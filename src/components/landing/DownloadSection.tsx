@@ -21,7 +21,7 @@ export function DownloadSection() {
   return (
     <Section
       id="download"
-      title="Get ChatbotAI Now"
+      title="Download Now"
       subtitle="Download the app today and step into the future of AI interaction. Available on your favorite mobile platform."
       className="bg-gradient-to-b from-secondary/30 to-background"
     >
