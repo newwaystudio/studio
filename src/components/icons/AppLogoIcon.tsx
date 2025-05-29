@@ -8,11 +8,12 @@ export function AppLogoIcon({
   className, 
   width = 64, // Default width if not provided
   height = 64, // Default height if not provided
-  alt = "App Logo", // Default alt text
+  alt = "ChatbotAI Logo", // Updated alt text
   ...props 
 }: AppLogoIconProps) {
-  // IMPORTANT: Replace this placeholder URL with the absolute URL of your actual logo image.
-  const logoUrl = "https://placehold.co/64x64.png";
+  // This now points to a local path. 
+  // Please ensure your logo image is placed at 'public/images/app-logo.png'
+  const logoUrl = "/images/app-logo.png";
 
   return (
     <img
@@ -22,7 +23,7 @@ export function AppLogoIcon({
       height={height}
       className={className}
       {...props}
-      data-ai-hint="logo abstract" // Added a hint for placeholder
+      data-ai-hint="logo abstract" 
     />
   );
 }
