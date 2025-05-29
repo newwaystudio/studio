@@ -27,10 +27,10 @@ export function DownloadSection() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full md:w-1/2 lg:w-1/3">
            <Image 
-            src="https://placehold.co/400x600.png" 
+            src="https://placehold.co/240x360.png" 
             alt="App on phone"
-            width={400}
-            height={600}
+            width={240}
+            height={360}
             className="rounded-xl shadow-2xl mx-auto"
             data-ai-hint="mobile phone app"
           />
