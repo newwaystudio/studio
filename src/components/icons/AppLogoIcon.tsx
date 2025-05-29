@@ -17,7 +17,9 @@ export function AppLogoIcon({
   ...props
 }: AppLogoIconProps) {
   // The src path should be absolute from the `public` folder
-  const logoSrc = '/images/app_logo.jpg'; // Corrected path
+  // Ensure your logo image is at 'public/images/app_logo.jpg'
+  // or update this path if your file is named differently or in another subfolder of 'public'.
+  const logoSrc = '/images/app_logo.jpg'; 
 
   return (
     <Image
@@ -25,8 +27,8 @@ export function AppLogoIcon({
       alt="ChatbotAI Logo"
       width={Number(width)} // Ensure width and height are numbers for next/image
       height={Number(height)}
-      className={cn(className, "rounded-[10px]")} // Added rounded corners
-      data-ai-hint="app logo" // Added AI hint
+      className={cn(className, "rounded-[10px]")} // Keeps the 10px corner radius
+      data-ai-hint="geometric cube" // Updated AI hint for better specificity
       priority // Add priority if it's an LCP element, common for logos in headers
       {...props} // Spread remaining props, ensure they are valid for next/image
     />
