@@ -28,10 +28,10 @@ export function HeroSection() {
         </div>
         <div className="relative flex justify-center items-center">
           <Image
-            src="/images/1.jpg" 
+            src="/images/1.jpg"
             alt="ChatbotAI App Mockup"
-            width={350} 
-            height={385} 
+            width={210}
+            height={231}
             className="rounded-xl shadow-2xl object-cover"
             data-ai-hint="app screen mobile"
             priority
