@@ -26,17 +26,16 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative flex justify-center items-center pl-[100px]">
-          <Image
-            src="/images/demo_mockup.png"
-            alt="ChatbotAI App Mockup"
-            width={252}
-            height={277}
-            className="rounded-xl shadow-2xl object-cover"
-            data-ai-hint="app mockup"
-            priority
-          />
-        </div>
+        {/* The wrapping div has been removed. The Image is now a direct child of the grid. */}
+        <Image
+          src="/images/demo_mockup.png"
+          alt="ChatbotAI App Mockup"
+          width={252}
+          height={277}
+          className="rounded-xl shadow-2xl object-cover"
+          data-ai-hint="app mockup"
+          priority
+        />
       </div>
     </Section>
   );
