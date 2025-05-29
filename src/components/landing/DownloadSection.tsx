@@ -1,5 +1,4 @@
 
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Section } from '@/components/landing/Section';
 
@@ -29,7 +28,7 @@ export function DownloadSection() {
         <div className="w-full md:w-2/3 lg:w-1/2 text-center">
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="bg-foreground hover:bg-foreground/90 text-background shadow-lg hover:shadow-xl transition-shadow">
+            <Button asChild size="lg" className="text-background shadow-lg hover:shadow-xl transition-shadow bg-[url('/images/AppStore.png')] bg-contain bg-center bg-no-repeat">
               <a href="https://apps.apple.com/us/app/chatbot-ai-smart-ai-assistant/id1671101527" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                 <AppleIcon />
                 <span className="ml-2">Download on App Store</span>
