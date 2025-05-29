@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Sparkles, Image as ImageIcon, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { generateAiImageDemo, type GenerateAiImageDemoInput } from '@/ai/flows/generate-ai-image-demo'; // Adjusted import path
+import { generateAiImageDemo, type GenerateAiImageDemoInput } from '@/ai/flows/generate-ai-image-demo';
 
 export function ImageGeneratorFeature() {
   const [prompt, setPrompt] = useState('');
@@ -89,26 +89,32 @@ export function ImageGeneratorFeature() {
           </Button>
         </form>
       </CardContent>
-      { (isLoading || generatedImage) && (
-        <CardFooter className="p-6 pt-0">
-          <div className="w-full aspect-square border border-dashed border-border rounded-lg flex items-center justify-center bg-muted/50 overflow-hidden">
-            {isLoading && <Loader2 className="h-12 w-12 text-primary animate-spin" />}
-            {generatedImage && !isLoading && (
-              <Image
-                src={generatedImage}
-                alt="Generated AI Image"
-                width={512}
-                height={512}
-                className="object-contain w-full h-full"
-                data-ai-hint="ai generated"
-              />
-            )}
-            {!isLoading && !generatedImage && (
-              <p className="text-muted-foreground">Your generated image will appear here.</p>
-            )}
-          </div>
-        </CardFooter>
-      )}
+      {/* CardFooter is now always visible to show the placeholder or generated image */}
+      <CardFooter className="p-6 pt-0">
+        <div className="w-full aspect-square border border-dashed border-border rounded-lg flex items-center justify-center bg-muted/50 overflow-hidden">
+          {isLoading && <Loader2 className="h-12 w-12 text-primary animate-spin" />}
+          {!isLoading && generatedImage && (
+            <Image
+              src={generatedImage}
+              alt="Generated AI Image"
+              width={512}
+              height={512}
+              className="object-contain w-full h-full"
+              data-ai-hint="ai generated"
+            />
+          )}
+          {!isLoading && !generatedImage && (
+            <Image
+              src="/images/demo.png" // Changed to local demo.png
+              alt="Image generation demo placeholder"
+              width={512} // Assuming demo.png can be displayed well at this size
+              height={512} // Adjust if your demo.png has different dimensions/aspect ratio
+              className="object-contain w-full h-full"
+              data-ai-hint="placeholder demo app" // Updated AI hint
+            />
+          )}
+        </div>
+      </CardFooter>
     </Card>
   );
 }
