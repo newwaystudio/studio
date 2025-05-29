@@ -26,12 +26,11 @@ export function DownloadSection() {
       className="bg-gradient-to-b from-secondary/30 to-background"
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        <div className="w-full md:w-2/3 lg:w-1/2 text-center"> {/* Adjusted width and removed md:text-left */}
-          <h3 className="text-2xl font-semibold text-foreground mb-6">Ready to Explore?</h3>
+        <div className="w-full md:w-2/3 lg:w-1/2 text-center">
           <p className="text-muted-foreground mb-8">
             Join thousands of users who are already benefiting from ChatbotAI. Click below to download for your device.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4"> {/* Changed md:justify-start to justify-center */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-foreground hover:bg-foreground/90 text-background shadow-lg hover:shadow-xl transition-shadow">
               <a href="https://apps.apple.com/us/app/chatbot-ai-smart-ai-assistant/id1671101527" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                 <AppleIcon />
