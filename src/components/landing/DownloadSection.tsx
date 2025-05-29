@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Section } from '@/components/landing/Section';
@@ -18,23 +19,13 @@ const GooglePlayIcon = () => (
 
 export function DownloadSection() {
   return (
-    <Section 
-      id="download" 
+    <Section
+      id="download"
       title="Get ChatbotAI Now"
       subtitle="Download the app today and step into the future of AI interaction. Available on your favorite mobile platform."
       className="bg-gradient-to-b from-secondary/30 to-background"
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        <div className="w-full md:w-1/2 lg:w-1/3">
-           <Image 
-            src="https://placehold.co/240x360.png" 
-            alt="App on phone"
-            width={240}
-            height={360}
-            className="rounded-xl shadow-2xl mx-auto"
-            data-ai-hint="mobile phone app"
-          />
-        </div>
         <div className="w-full md:w-1/2 lg:w-2/5 text-center md:text-left">
           <h3 className="text-2xl font-semibold text-foreground mb-6">Ready to Explore?</h3>
           <p className="text-muted-foreground mb-8">
