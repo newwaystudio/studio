@@ -30,22 +30,16 @@ export function ChatbotFeature() {
               <li>Available on <Smartphone className="inline h-4 w-4"/> Android & <Tablet className="inline h-4 w-4"/> iOS</li>
             </ul>
           </div>
-          {/*
-            The div containing the image no longer forces a specific aspect ratio.
-            The Image component has explicit width and height props.
-            IMPORTANT: Replace 375 and 667 with the *actual* intrinsic dimensions
-            (width and height in pixels) of your image file '/images/1.jpg'.
-            This ensures the image displays with its correct aspect ratio and scales responsively.
-            The surrounding div will now adapt to the image's size.
-          */}
+          <div className="relative w-fit h-fit rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/images/1.jpg"
+              src="/images/demo.png"
               alt="Chatbot Interface Mockup"
               width={375} // Replace with your image's actual width
               height={667} // Replace with your image's actual height
               className="rounded-lg" // Apply rounding directly to the image
               data-ai-hint="chat app mobile"
             />
+          </div>
         </div>
       </CardContent>
     </Card>
