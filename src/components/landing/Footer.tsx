@@ -19,7 +19,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <AppLogoIcon className="h-7 w-7 text-primary" />
-            <span className="font-semibold text-foreground">AI Chat Companion</span>
+            <span className="font-semibold text-foreground">ChatbotAI</span>
           </div>
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Newway Labs. All rights reserved.

@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <AppLogoIcon className="h-20 w-20 text-primary mb-6" />
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6">
-            Meet Your <span className="text-primary">AI Chat Companion</span>
+            Meet Your <span className="text-primary">ChatbotAI</span>
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mb-8">
             Experience the future of conversation with our intelligent chatbot, creative AI image generator, and a curated store of powerful AI models. Available on Android & iOS.
@@ -28,7 +28,7 @@ export function HeroSection() {
         <div className="relative flex justify-center items-center">
           <Image
             src="https://placehold.co/500x550.png"
-            alt="AI Chat Companion App Mockup"
+            alt="ChatbotAI App Mockup"
             width={500}
             height={550}
             className="rounded-xl shadow-2xl object-cover"

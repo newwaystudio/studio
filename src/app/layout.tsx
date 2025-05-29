@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import { GeistSans } from 'geist/font/sans'; // Corrected import for GeistSans
-import { GeistMono } from 'geist/font/mono'; // Corrected import for GeistMono
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from '@/components/landing/Header';
 import { Footer } from '@/components/landing/Footer';
 
-const geistSans = GeistSans; // Use the imported object directly
-const geistMono = GeistMono; // Use the imported object directly
+const geistSans = GeistSans;
+const geistMono = GeistMono;
 
 export const metadata: Metadata = {
-  title: 'AI Chat Companion',
-  description: 'Your intelligent AI assistant for chat, image generation, and more.',
+  title: 'ChatbotAI',
+  description: 'Your intelligent AI assistant for chat, image generation, and more by ChatbotAI.',
 };
 
 export default function RootLayout({
