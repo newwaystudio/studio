@@ -31,11 +31,11 @@ export function ChatbotFeature() {
           </div>
           <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="https://placehold.co/300x400.png" 
+              src="https://placehold.co/375x500.png" 
               alt="Chatbot Interface Mockup" 
               layout="fill" 
               objectFit="cover"
-              data-ai-hint="chat app" 
+              data-ai-hint="chat app mobile" 
             />
           </div>
         </div>
