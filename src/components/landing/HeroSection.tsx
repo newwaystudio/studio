@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <AppLogoIcon className="h-20 w-20 text-primary mb-6" />
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6 whitespace-nowrap">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-6 whitespace-nowrap">
             Chatbot AI - Chat & Ask AI
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mb-8">
@@ -41,3 +41,4 @@ export function HeroSection() {
     </Section>
   );
 }
+
