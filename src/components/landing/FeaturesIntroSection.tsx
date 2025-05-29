@@ -1,6 +1,5 @@
 import { Section } from '@/components/landing/Section';
 import { ChatbotFeature } from './features/ChatbotFeature';
-// import { ImageGeneratorFeature } from './features/ImageGeneratorFeature'; // Removed
 import { AIStoreFeature } from './features/AIStoreFeature';
 
 export function FeaturesIntroSection() {
@@ -12,13 +11,8 @@ export function FeaturesIntroSection() {
       className="bg-secondary/30"
     >
       <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
-        {/* Chatbot Showcase can be a larger, more detailed component */}
         <ChatbotFeature />
-        {/* AI Image Generator and AI Store can be grouped or separate */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 mt-8"> {/* Changed lg:grid-cols-2 to lg:grid-cols-1 */}
-          {/* <ImageGeneratorFeature /> */} {/* Removed */}
-          <AIStoreFeature />
-        </div>
+        <AIStoreFeature /> {/* AIStoreFeature is now a direct child of the grid */}
       </div>
     </Section>
   );
