@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { ImageProps } from 'next/image';
+import { cn } from '@/lib/utils';
 
 // Combine SVGProps with a few relevant ImageProps, or create a more specific interface
 interface AppLogoIconProps extends Omit<ImageProps, 'src' | 'alt'> {
@@ -24,7 +25,7 @@ export function AppLogoIcon({
       alt="ChatbotAI Logo"
       width={Number(width)} // Ensure width and height are numbers for next/image
       height={Number(height)}
-      className={className}
+      className={cn(className, "rounded-[10px]")} // Added rounded corners
       data-ai-hint="app logo" // Added AI hint
       priority // Add priority if it's an LCP element, common for logos in headers
       {...props} // Spread remaining props, ensure they are valid for next/image
