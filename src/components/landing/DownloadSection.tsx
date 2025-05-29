@@ -20,7 +20,7 @@ export function DownloadSection() {
   return (
     <Section 
       id="download" 
-      title="Get AI Chat Companion Now"
+      title="Get ChatbotAI Now"
       subtitle="Download the app today and step into the future of AI interaction. Available on your favorite mobile platform."
       className="bg-gradient-to-b from-secondary/30 to-background"
     >
@@ -38,19 +38,19 @@ export function DownloadSection() {
         <div className="w-full md:w-1/2 lg:w-2/5 text-center md:text-left">
           <h3 className="text-2xl font-semibold text-foreground mb-6">Ready to Explore?</h3>
           <p className="text-muted-foreground mb-8">
-            Join thousands of users who are already benefiting from AI Chat Companion. Click below to download for your device.
+            Join thousands of users who are already benefiting from ChatbotAI. Click below to download for your device.
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-shadow">
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+            <Button asChild size="lg" className="bg-foreground hover:bg-foreground/90 text-background shadow-lg hover:shadow-xl transition-shadow">
+              <a href="https://apps.apple.com/us/app/chatbot-ai-smart-ai-assistant/id1671101527" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                 <AppleIcon />
-                <span className="ml-2">App Store</span>
+                <span className="ml-2">Download on App Store</span>
               </a>
             </Button>
-            <Button asChild size="lg" className="bg-foreground hover:bg-foreground/90 text-background shadow-lg hover:shadow-xl transition-shadow">
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-shadow">
+              <a href="https://play.google.com/store/apps/details?id=newway.open.chatgpt.ai.chat.bot.free&hl=en-US" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
                 <GooglePlayIcon />
-                <span className="ml-2">Google Play</span>
+                <span className="ml-2">Download on Google Play</span>
               </a>
             </Button>
           </div>
