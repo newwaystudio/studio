@@ -38,7 +38,6 @@ export function ChatbotFeature() {
             This ensures the image displays with its correct aspect ratio and scales responsively.
             The surrounding div will now adapt to the image's size.
           */}
-          <div className="relative rounded-lg overflow-hidden shadow-md w-fit h-fit">
             <Image
               src="/images/1.jpg"
               alt="Chatbot Interface Mockup"
@@ -47,7 +46,6 @@ export function ChatbotFeature() {
               className="rounded-lg" // Apply rounding directly to the image
               data-ai-hint="chat app mobile"
             />
-          </div>
         </div>
       </CardContent>
     </Card>
