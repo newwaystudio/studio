@@ -1,20 +1,9 @@
 
 import { Button } from '@/components/ui/button';
 import { Section } from '@/components/landing/Section';
+import Image from 'next/image'; // Added import
 
-// Placeholder icons for App Store and Google Play
-const AppleIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12.55,2.36a2.34,2.34,0,0,0-2.09.37,2.6,2.6,0,0,0-.76,2.78,2.74,2.74,0,0,0,1.28,1.33,1.68,1.68,0,0,1,.82,1.32,1.76,1.76,0,0,1-1.7,1.76,1.86,1.86,0,0,1-1.13-.47A2.13,2.13,0,0,0,7.65,11a4.59,4.59,0,0,0,2.7,4.08,4.85,4.85,0,0,0,5.27-.63,1.62,1.62,0,0,1,1.21-.59,1.73,1.73,0,0,1,1.28.53,1.58,1.58,0,0,1,.41,1.13,1.62,1.62,0,0,1-.41,1.13,1.73,1.73,0,0,1-1.28.53,3.13,3.13,0,0,1-2.36-1.12,5.1,5.1,0,0,0-3.76-2,4.7,4.7,0,0,0-4.21,2.65c-.22.47-.45.95-.66,1.42a2.58,2.58,0,0,0,2.43,3.65,4.58,4.58,0,0,0,3.21-1.41,4.28,4.28,0,0,0,1.33-2.66,1.53,1.53,0,0,1,1-1.18,1.68,1.68,0,0,1,1.82.75,1.83,1.83,0,0,0,1.39.71A2.11,2.11,0,0,0,19.09,16c.11-.21.21-.42.3-.64a4.09,4.09,0,0,0-1.39-4.64,4.39,4.39,0,0,0-4.68-1.15,4.54,4.54,0,0,0-3.24,2.7,2,2,0,0,1-1.79.89,1.53,1.53,0,0,1-1.19-.67A1.63,1.63,0,0,1,7,10.58a1.58,1.58,0,0,1,1.11-1.36,1.76,1.76,0,0,1,1.74.4C10.29,9.29,11.21,8,11.21,6.83a2.38,2.38,0,0,0-1.11-2.15A2.53,2.53,0,0,0,8.82,2.2a2.3,2.3,0,0,0-1.22.65,2.71,2.71,0,0,0,.6,4.12A2.54,2.54,0,0,0,9.44,6,1.7,1.7,0,0,1,8.32,4.48,1.68,1.68,0,0,1,9,3.12a1.82,1.82,0,0,1,2.33-.4A2.19,2.19,0,0,0,12.55,2.36Z" />
-  </svg>
-);
-
-const GooglePlayIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22,12a1,1,0,0,0-1-1H16.33a1,1,0,0,0-.93.63L12.34,19A1,1,0,0,0,13.26,20.37l7.81-4.68A1,1,0,0,0,22,12ZM2,12a1,1,0,0,0,.93-1.37L4.86,6.1A1,1,0,0,0,4,5H1a1,1,0,0,0,0,2H3.14l-1,1.74A1,1,0,0,0,2,12Zm13.36-4.08L7.8,2.63A1,1,0,0,0,6.33,3.5L12.61,12l3.67-6.35A1,1,0,0,0,15.36,4.92Z" />
-  </svg>
-);
-
+// Placeholder icons are no longer needed as buttons will be images
 
 export function DownloadSection() {
   return (
@@ -27,17 +16,29 @@ export function DownloadSection() {
       <div className="flex flex-col items-center justify-center gap-8">
         <div className="w-full md:w-2/3 lg:w-1/2 text-center">
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="text-background shadow-lg hover:shadow-xl transition-shadow bg-[url('/images/AppStore.png')] bg-contain bg-center bg-no-repeat">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow p-0 bg-transparent hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0">
               <a href="https://apps.apple.com/us/app/chatbot-ai-smart-ai-assistant/id1671101527" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
-                <AppleIcon />
-                <span className="ml-2">Download on App Store</span>
+                <Image 
+                  src="/images/AppStore.png" 
+                  alt="Download on the App Store" 
+                  width={180} // Adjust width as needed
+                  height={54} // Adjust height to maintain aspect ratio
+                  className="rounded-md"
+                  data-ai-hint="app store badge"
+                />
               </a>
             </Button>
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-shadow">
+            <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow p-0 bg-transparent hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0">
               <a href="https://play.google.com/store/apps/details?id=newway.open.chatgpt.ai.chat.bot.free&hl=en-US" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-                <GooglePlayIcon />
-                <span className="ml-2">Download on Google Play</span>
+                <Image 
+                  src="/images/GooglePlay.png" 
+                  alt="Get it on Google Play" 
+                  width={180} // Adjust width as needed
+                  height={54} // Adjust height to maintain aspect ratio
+                  className="rounded-md"
+                  data-ai-hint="play store badge"
+                />
               </a>
             </Button>
           </div>
