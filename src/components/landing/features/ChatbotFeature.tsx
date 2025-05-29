@@ -31,7 +31,7 @@ export function ChatbotFeature() {
           </div>
           <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="https://placehold.co/375x500.png" 
+              src="/images/1.jpg" 
               alt="Chatbot Interface Mockup" 
               layout="fill" 
               objectFit="cover"
