@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <Section id="hero" className="bg-gradient-to-b from-background to-secondary/30 pt-20 md:pt-32">
       <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <div className="flex flex-col items-center text-center"> {/* Changed md:items-start and md:text-left */}
+        <div className="flex flex-col items-center text-center"> {/* Text content already centered */}
           <AppLogoIcon className="h-20 w-20 text-primary mb-6" />
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-6 whitespace-nowrap">
             Chatbot AI - Chat & Ask AI
@@ -26,17 +26,17 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        {/* The wrapping div has been removed. The Image is now a direct child of the grid. */}
-        <Image
-          src="/images/demo_mockup.png"
-          alt="ChatbotAI App Mockup"
-          width={452}
-          height={477}
-          data-ai-hint="app mockup"
-          priority
-        />
+        <div className="flex justify-center"> {/* Added wrapper to center the image */}
+          <Image
+            src="/images/demo_mockup.png"
+            alt="ChatbotAI App Mockup"
+            width={452}
+            height={477}
+            data-ai-hint="app mockup"
+            priority
+          />
+        </div>
       </div>
     </Section>
   );
 }
-
