@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, type FormEvent } from 'react';
@@ -50,7 +51,7 @@ export function ImageGeneratorFeature() {
   };
 
   return (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-transparent">
       <CardHeader className="bg-accent/10">
          <div className="flex items-center gap-3">
           <ImageIcon className="w-10 h-10 text-accent" />

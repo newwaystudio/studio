@@ -27,7 +27,7 @@ export function HeroSection() {
         </div>
         <div className="relative flex justify-center items-center">
           <Image
-            src="/images/hero-app-showcase.png" 
+            src="/images/demo.png" 
             alt="ChatbotAI App Mockup"
             width={500}
             height={550}
