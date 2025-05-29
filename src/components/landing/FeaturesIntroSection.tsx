@@ -5,8 +5,8 @@ import { AIStoreFeature } from './features/AIStoreFeature';
 
 export function FeaturesIntroSection() {
   return (
-    <Section 
-      id="features" 
+    <Section
+      id="features"
       title="Powerful Features at Your Fingertips"
       subtitle="AI Chat Companion is packed with cutting-edge AI capabilities to assist, entertain, and inspire you."
       className="bg-secondary/30"
