@@ -4,8 +4,8 @@ import { MessageSquareText, Smartphone, Tablet } from 'lucide-react';
 
 export function ChatbotFeature() {
   return (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <CardHeader className="bg-primary/10">
+    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-transparent">
+      <CardHeader> {/* Removed bg-primary/10 */}
         <div className="flex items-center gap-3">
           <MessageSquareText className="w-10 h-10 text-primary" />
           <div>
