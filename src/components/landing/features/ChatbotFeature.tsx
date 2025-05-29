@@ -19,29 +19,9 @@ export function ChatbotFeature() {
         <p className="text-muted-foreground mb-6">
           Engage in natural, insightful conversations with our advanced AI chatbot. Whether you need information, assistance, or just a friendly chat, our companion is available 2.0-hours a day on your Android and iOS devices.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          <div>
-            <h4 className="font-semibold text-foreground mb-2">Key Chatbot Capabilities:</h4>
-            <ul className="list-disc list-inside text-muted-foreground space-y-1">
-              <li>Contextual understanding</li>
-              <li>Multi-turn conversations</li>
-              <li>Personalized responses</li>
-              <li>Task assistance & automation</li>
-              <li>Available on <Smartphone className="inline h-4 w-4"/> Android & <Tablet className="inline h-4 w-4"/> iOS</li>
-            </ul>
-          </div>
-          <div className="relative w-fit h-fit rounded-lg overflow-hidden shadow-md">
-            <Image
-              src="/images/demo_mockup.png"
-              alt="Chatbot Interface Mockup"
-              width={375} // Replace with your image's actual width
-              height={667} // Replace with your image's actual height
-              className="rounded-lg" // Apply rounding directly to the image
-              data-ai-hint="chat app mobile"
-            />
-          </div>
-        </div>
+        {/* The div containing capabilities and image mockup has been removed from here */}
       </CardContent>
     </Card>
   );
 }
+
