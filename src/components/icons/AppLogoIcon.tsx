@@ -16,7 +16,7 @@ export function AppLogoIcon({
   ...props
 }: AppLogoIconProps) {
   // The src path should be absolute from the `public` folder
-  const logoSrc = '/images/app-logo.png'; // Example path, ensure this file exists in public/images/
+  const logoSrc = '/images/app_logo.jpg'; // Corrected path
 
   return (
     <Image
