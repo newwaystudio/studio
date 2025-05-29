@@ -32,7 +32,7 @@ export function ChatbotFeature() {
           </div>
           <div className="relative w-fit h-fit rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/images/demo.png"
+              src="/images/demo_mockup.png"
               alt="Chatbot Interface Mockup"
               width={375} // Replace with your image's actual width
               height={667} // Replace with your image's actual height
