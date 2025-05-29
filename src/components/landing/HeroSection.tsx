@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { AppLogoIcon } from '@/components/icons/AppLogoIcon';
@@ -35,8 +36,6 @@ export function HeroSection() {
             data-ai-hint="app showcase mobile"
             priority
           />
-           <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-accent/30 rounded-full blur-2xl -z-10 animate-pulse"></div>
-           <div className="absolute -top-8 -left-8 w-40 h-40 bg-primary/20 rounded-full blur-2xl -z-10 animate-pulse delay-1000"></div>
         </div>
       </div>
     </Section>
